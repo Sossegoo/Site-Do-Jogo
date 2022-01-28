@@ -6,4 +6,6 @@ const menuMobile = menu.querySelector(".menu-mobile")
 menuMobile.addEventListener("click", () =>{
     menu.classList.toggle("On",show)
     show = !show
+
+    
 })
