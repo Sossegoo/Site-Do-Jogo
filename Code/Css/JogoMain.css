@@ -1,22 +1,94 @@
 main{
-    width: 100%;
+   
     height: 100vh; /**/
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #15182e;
 }
 
 .Conteudo{
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 180vh;
-    height: 55vh;
+    height: 80vh;
     justify-content: center;
-    align-items: center;
-    background: #ffffff;
+    background: #fa000000;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.Conteudo h1{
-    font-size: 15vw;
-    text-transform: uppercase;
-    text-align: center;
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.bar{
+    width: 80px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bar:hover{
+    background-color: rgba(255, 255, 255, 0.048);
+}
+
+input{
+    display: none;
+}
+
+.Slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+@media(max-width: 964px){
+    .Conteudo{
+        width: 50vh;
+        height: 50vh;
+    }
 }
