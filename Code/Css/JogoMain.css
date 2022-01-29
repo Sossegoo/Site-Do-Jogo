@@ -21,6 +21,7 @@ main{
     background: #fa000000;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 0;
 }
 
 .navegacao{
