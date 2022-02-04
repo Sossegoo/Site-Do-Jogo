@@ -74,6 +74,9 @@ p{
     p{
         font-size: 8px;
     }
+    .Text{
+        margin-top: -350px;
+    }
 }
 
 @media(max-width: 500px){
