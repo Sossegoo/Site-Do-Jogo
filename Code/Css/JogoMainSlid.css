@@ -1,6 +1,6 @@
 main{
    
-    height: 100vh; /**/
+    height: 200vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,12 +11,12 @@ main{
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 180vh;
-    height: 80vh;
+    height: 60vh;
     justify-content: center;
     background: #fa000000;
     border-radius: 20px;
@@ -87,11 +87,28 @@ input{
     margin-left: -80%;
 }
 
-@media(max-width: 964px){
+@media(max-width: 1600px){
+    .Conteudo{
+        width: 130vh;
+        height: 50vh;
+    }
+}
+
+@media(max-width: 1230px){
+    .Conteudo{
+        width: 110vh;
+        height: 50vh;
+    }
+}
+
+@media(max-width: 500px){
     .Conteudo{
         width: 50vh;
         height: 50vh;
     }
+}
+
+@media(max-width: 900px){
     .bar{
         width: 40px;
         height: 15px;

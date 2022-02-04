@@ -2,8 +2,8 @@
 
 footer{
     width: 100%;
-    min-height: 150px;   /**/
-    background: #444;
+    min-height: 150px;
+    background: #000000eb;
     display: flex;
 }
 
@@ -48,7 +48,7 @@ footer .boxs:nth-child(4){
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: #000000;
     padding: 0px 20px;
 }
 
